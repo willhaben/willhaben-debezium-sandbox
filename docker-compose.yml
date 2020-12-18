@@ -1,8 +1,8 @@
 version: '3.4'
 
 volumes:
-  debezium-postgres-data:
-    name: debezium-postgres-data
+  debezium-demo-data:
+    name: debezium-demo-data
 
 services:
   postgres:
@@ -15,7 +15,7 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - "debezium-data:/var/lib/postgresql/data"
+      - "debezium-demo-data:/var/lib/postgresql/data"
       
   zookeeper:
     image: debezium/zookeeper:1.3

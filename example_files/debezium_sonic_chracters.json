@@ -1,0 +1,23 @@
+{
+    "name":"debezium_sonic_characters",
+    "config":{
+      "name": "debezium_sonic_characters",
+      "slot.name": "dbz_sonic_characters",
+      "plugin.name": "pgoutput",
+  
+      "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+      "tombstones.on.delete": "false",
+  
+      "tasks.max": "1",
+  
+      "database.hostname": "postgres",
+      "database.port": "5432",
+      "database.user": "debeziumuser",
+      "database.password": "debeziumuser",
+      "database.dbname": "debezium-demo",
+      "database.server.name": "sonic",
+  
+      "schema.include​.list": "public",
+      "table.include​.list": "public.character"
+    }
+  }

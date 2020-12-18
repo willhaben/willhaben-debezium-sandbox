@@ -87,5 +87,29 @@ Only you have to select for yourself is the topic which consists of **databasena
 You can also use your locally installed kafka to see the messages running through the broker. A preferred way, also for readability is the following:
 
 ```shell
-kafka-console-consumer.sh --bootstrap-server localhost:9092  --from-beginning --property print.key=true --topic <topic_name> | jq
+kafka-console-consumer.sh 
+    --bootstrap-server localhost:9092  
+    --from-beginning 
+    --property print.key=true 
+    --topic <topic_name> | jq
+```
+
+### Concrete examples
+After you uploaded example_files/debezium_sonic_chracters.json, you can do this:
+
+```bash
+bin/kafka-console-consumer.sh \
+    --bootstrap-server kafka:9092 \
+    --from-beginning \
+    --property print.key=true \
+    --topic sonic.public.character
+```
+or if you use your local installed kafka
+
+```shell
+kafka-console-consumer.sh 
+    --bootstrap-server localhost:9092  
+    --from-beginning 
+    --property print.key=true 
+    --topic sonic.public.character | jq
 ```

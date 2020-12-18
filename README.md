@@ -1,6 +1,8 @@
 # Debezium-demo project
 
-This project shows a little impression of what Debezium is capable of. The purpose of the demo is to show how willhaben jobs data can be extracted by using Debezium.
+This project offers a sandbox for playing around with debezium. It offers a basic database with some data records and some sample configuration files. 
+
+Feel free to play around with all features that debezium offers.
 
 ---
 
@@ -10,6 +12,7 @@ For using that demo it is necessary to have the following things pre setup:
 1. you need to have docker-compose installed
 2. if you want to see the kafka messages in a convenient way it is also preferred you have kafka installed on your machine
 3. if you like to have a proper console output you should also install [jq](https://stedolan.github.io/jq/)
+
 ---
 
 ## How to start the demo

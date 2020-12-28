@@ -23,6 +23,12 @@ Just start the docker-compose file and all necessary containers will boot up :
 docker-compose up
 ```
 
+On the database execute the _databasefiles/sonic_chars_schema.sql_ to create the schema in the database.
+All other sql-files are then for testing purpose. You can also execute them to see Debezium's snapshot behaviour when you upload the connector, or you can execute them later to see the change capturing in the kafka broker.
+
+Also, feel free to add additional datarecords and play around with updates, deletions, inserts to get a full
+experience on how those transactions are captured.
+
 ## Interact with Kafka Connect instance with the helperfiles
 
 In the connect-helper folder you can find some useful shells to quickly interact with the kafka-connect instance.

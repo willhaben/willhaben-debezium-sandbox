@@ -40,6 +40,13 @@ In the connect-helper folder you can find some useful shells to quickly interact
 
 ---
 
+## Visualization with Kafka UI
+
+With the docker-compose file there is also a Kafka-UI image starting up. On http://localhost:8005 you have a
+Web UI showing you all important information like schemas, connector status, topics etc.
+
+---
+
 ## Upload a Connector configuration
 
 The default way to upload a connector configuration is to use [curl](https://curl.se/).
